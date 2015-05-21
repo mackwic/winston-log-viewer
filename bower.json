@@ -1,5 +1,5 @@
 {
-  "name": "FeetMe",
+  "name": "winston-log-viewer",
   "dependencies": {
     "ansi_up": "1.2.0"
   }
