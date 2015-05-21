@@ -1,0 +1,28 @@
+head
+  title feetme-log-viewer
+
+body
+  h1 Welcome to Meteor!
+  +reset
+  .row
+    +log_viewer
+
+template(name="reset")
+  div(style="position:fixed; right: 2em; top: 2em; z-index:100")
+    button.btn.btn-default#reset Reset logs
+
+template(name="log_viewer")
+  .col-md-12
+    table.table.table-hover
+      thead
+        tr
+          th.col-md-1 Level
+          th.col-md-1 Timestamp
+          th.col-md-10 Message
+      tbody
+        each logs
+          tr(id="#{_id}" class="#{class}")
+            th= level
+            th= timestamp
+            th!= message
+

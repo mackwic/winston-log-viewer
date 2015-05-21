@@ -1,0 +1,6 @@
+{
+  "name": "FeetMe",
+  "dependencies": {
+    "ansi_up": "1.2.0"
+  }
+}
